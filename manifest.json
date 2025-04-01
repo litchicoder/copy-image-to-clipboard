@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Copy Image to Clipboard",
-  "version": "1.7",
+  "version": "1.8",
   "permissions": [
     "activeTab",
     "contextMenus",
@@ -22,7 +22,8 @@
   },
   "background": {
     "service_worker": "background.js",
-    "type": "module"
+    "type": "module",
+    "css": ["styles.css"]
   },
   "icons": {
     "48": "icons/icon48.png"
