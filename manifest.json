@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Image to Clipboard",
+  "version": "1.7",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "downloads",
+    "scripting",
+    "alarms",
+    "clipboardRead",
+    "clipboardWrite",
+    "tabs",
+    "webNavigation",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_icon": "icons/icon48.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "minimum_chrome_version": "88"
+}
