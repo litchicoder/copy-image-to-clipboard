@@ -40,3 +40,16 @@
   @keyframes spin { 
     to { transform: rotate(360deg); } 
   }
+
+ /* 样式隔离增强*/
+.toast-container {
+  position: fixed !important;
+  z-index: 999999 !important;
+  top: 20px !important;
+  right: 20px !important;
+}
+
+/* 强制覆盖所有框架样式 */
+.toast-container * {
+  all: unset !important;
+}
